@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-white: #FFFFFF;
+  --color-brand-primary-text: #080808;
+  --color-brand-neutral: #F5F5F3;
+  --color-brand-black: #0A0A0A;
+  --color-brand-surface: #151515;
+  --color-brand-red: #E42316;
+  --color-brand-muted: #777777;
+  --color-brand-border: #DEDEDE;
+  --color-brand-dark-border: #303030;
+}
+
+/* ============================================================
+   INTERNBRIDGE V4 — EDITORIAL RECRUITMENT DESIGN SYSTEM
+   Disciplined Black, White and Brand Red High-Contrast System
+   ============================================================ */
+
+@layer base {
+  :root {
+    --bg-primary: #FFFFFF;
+    --text-primary: #080808;
+    --bg-secondary: #F5F5F3;
+    --bg-black: #0A0A0A;
+    --bg-dark-surface: #151515;
+    --color-red: #E42316;
+    --text-muted: #777777;
+    --border-light: #DEDEDE;
+    --border-dark: #303030;
+
+    --background: #FFFFFF;
+    --foreground: #080808;
+    --card: #FFFFFF;
+    --card-foreground: #080808;
+    --border: #DEDEDE;
+    --input: #DEDEDE;
+    --primary: #E42316;
+    --primary-foreground: #FFFFFF;
+  }
+
+  *,
+  *::before,
+  *::after {
+    border-color: #DEDEDE;
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background-color: #E42316;
+    color: #FFFFFF;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #080808;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #080808;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  /* Reset browser default link colors */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Form controls: sharp, clean, editorial geometry */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="search"],
+  input[type="date"],
+  input[type="datetime-local"],
+  textarea,
+  select {
+    display: block;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.25rem;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #080808;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: #E42316;
+    box-shadow: 0 0 0 2px rgba(228, 35, 22, 0.15);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #777777;
+  }
+
+  input:disabled,
+  textarea:disabled,
+  select:disabled {
+    background-color: #F5F5F3;
+    color: #777777;
+    cursor: not-allowed;
+  }
+
+  /* Buttons: clean rectangular geometry */
+  button {
+    font-family: inherit;
+  }
+
+  /* Custom minimalist scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5F5F3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #DEDEDE;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E42316;
+  }
+}
